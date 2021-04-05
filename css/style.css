@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ff7675;
+}
+.card{
+    position: relative;
+    background: #ff7675;
+    margin: 30px;
+    height: 350px;
+    width: 220px;
+    border-radius: 20px;
+    transition: .4s linear;
+    box-shadow: -6px -6px 25px 0 #ffa1a1d5,
+                6px 6px 25px 0 rgba(0,0,0,0.2);
+}
+.card:hover{
+    transform: scale(.99);
+    box-shadow: inset -6px -6px 25px 0 #ffa1a1d5 rgba(0,0,0,0.2),
+                inset 6px 6px 25px 0 rgba(0,0,0,0.1);
+}
+.hdr{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 50%;
+    top: 15px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset -6px -6px 10px 0 rgba(205,177,255,0),
+                inset 10px 10px 10px 0 rgba(0,0,0,0.2);
+}
+.hdr:hover{
+    box-shadow: -6px -6px 10px 0 #ffa1a1d5,
+                10px 10px 10px 0 rgba(0,0,0,0.08);
+    transform: translateX(-50%)scale(1.1);            
+}
+.hdr img{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.body{
+    position: absolute;
+    top: 100px;
+    padding: 15px;
+    color: white;
+}
+.body h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.body p{
+    font-size: 12px;
+    line-height: 22px;
+}
+.footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100px;
+    height: 60px;
+}
+.footer button{
+    position: absolute;
+    border: none;
+    background: #ff7675;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    box-shadow: inset -6px -6px 10px 0 #ffa1a1d5,
+                inset 6px 6px 10px 0 rgba(0,0,0,0.1);
+    transition: 0.5s linear; 
+       
+}
+.footer:hover button{
+    transform: translate(-50%,-50%)scale(1.2);
+    box-shadow: inset -6px -6px 10px 0 #ffa1a1d5,
+                inset 6px 6px 10px 0 rgba(0,0,0,0.1);
+}
+.footer button:focus{
+    outline: none;
+}
